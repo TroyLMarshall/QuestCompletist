@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Deploy" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>QuestCompletist</Name>
+    <ProjectGuid>c8ae7090-482d-414c-93c3-229f490abb46</ProjectGuid>
+    <AssemblyName>QuestCompletist</AssemblyName>
+    <RootNamespace>QuestCompletist</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Bindings.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="debug.mp3" />
+    <Content Include="Images\ActiveQuestIcon.blp" />
+    <Content Include="Images\AllianceIcon.blp" />
+    <Content Include="Images\ClassQuestIcon.blp" />
+    <Content Include="Images\DailyActiveQuestIcon.blp" />
+    <Content Include="Images\DailyQuestIcon.blp" />
+    <Content Include="Images\DropQuestIcon.blp" />
+    <Content Include="Images\DropQuestIconRepeatable.blp" />
+    <Content Include="Images\HordeIcon.blp" />
+    <Content Include="Images\IncompleteQuestIcon.blp" />
+    <Content Include="Images\KillQuestIcon.blp" />
+    <Content Include="Images\QCIcons.blp" />
+    <Content Include="Images\QuestCompleteIcon.blp" />
+    <Content Include="Images\SpecialQuestIcon.blp" />
+    <Content Include="Images\TopLeft.blp" />
+    <Content Include="Images\UnattainableIcon.blp" />
+    <Content Include="Localization.deDE.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.enUS.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.esES.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.esMX.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.frFR.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.itIT.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.koKR.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.ptBR.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.ruRU.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.zhCN.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Localization.zhTW.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="qcCollect.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="qcCore.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="qcMenu.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="qcPinDB.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="qcQuest.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="QuestCompletist.toc">
+      <SubType>TableOfContents</SubType>
+    </Content>
+    <Content Include="QuestCompletist.xml">
+      <SubType>Frame</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images" />
+  </ItemGroup>
+  <Import Project="$(DevEnvDir)\Extensions\Tools\MSBuild\AddonStudio\Wow\3.0\WowAddonStudio.targets" />
+  <!--
+  To modify your build process, add your task inside one of the targets below and uncomment it.
+  <Target Name="BeforeClean"></Target>
+  <Target Name="AfterClean"></Target>
+  <Target Name="BeforeRebuild"></Target>
+  <Target Name="AfterRebuild"></Target>
+  <Target Name="BeforeDeploy"></Target>
+  <Target Name="AfterDeploy"></Target>
+  -->
+</Project>
